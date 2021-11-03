@@ -1,0 +1,46 @@
+:root {
+  --heading-font: "Ubuntu", sans-serif;
+  --name-font: "VT323", monospace;
+  --text-color: #f7f7f7;
+  --backgound-color: #393e46;
+  --secondary-color: #5c636e;
+  --heading-color: #fdfa2b;
+}
+body {
+  background: var(--backgound-color);
+}
+h1 {
+  color: var(--heading-color);
+  font-family: var(--name-font);
+  font-size: 80px;
+  text-align: center;
+}
+h2,
+h3 {
+  color: var(--text-color);
+  font-family: var(--heading-font);
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  margin-top: 100px;
+  font-weight: bolder;
+}
+.contactButton {
+  text-align: center;
+}
+.contact-btn {
+  color: #393e46;
+  border: 1px solid #fdfa2b;
+  border-radius: 15px;
+  margin: 30px auto;
+  background: #fdfa2b;
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  font-size: larger;
+  padding: 12px 20px;
+  transition: all 200ms ease-in-out;
+}
+.contact-btn:hover {
+  background: #f7f592;
+}
