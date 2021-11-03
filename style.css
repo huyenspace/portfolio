@@ -1,6 +1,6 @@
 :root {
   --heading-font: "Ubuntu", sans-serif;
-  --name-font: "VT323", monospace;
+  --name-font: "Kanit", sans-serif;
   --text-color: #f7f7f7;
   --backgound-color: #393e46;
   --secondary-color: #5c636e;
@@ -23,8 +23,10 @@ h3 {
   font-size: 30px;
 }
 h2 {
-  margin-top: 100px;
   font-weight: bolder;
+}
+.hero {
+  background-image: url(pexels-photo-110854.jpeg);
 }
 .contactButton {
   text-align: center;
@@ -33,7 +35,7 @@ h2 {
   color: #393e46;
   border: 1px solid #fdfa2b;
   border-radius: 15px;
-  margin: 30px auto;
+  margin: 0 auto;
   background: #fdfa2b;
   font-family: var(--heading-font);
   font-weight: bolder;
@@ -42,5 +44,37 @@ h2 {
   transition: all 200ms ease-in-out;
 }
 .contact-btn:hover {
-  background: #f7f592;
+  background: #fcd704;
+}
+.introduction {
+  color: #f7f7f7;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 25px;
+}
+.design-image {
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background: #f8f7a3;
+}
+.project-name {
+  color: var(--heading-color);
+  text-align: left;
+  font-size: 32px;
+  font-family: var(--name-font);
+}
+.project-content {
+  color: var(--text-color);
+  font-family: var(--heading-font);
+  font-size: 18px;
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .project-description {
+    text-align: center;
+  }
+  .project-name {
+    text-align: center;
+  }
 }
