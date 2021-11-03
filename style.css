@@ -78,3 +78,11 @@ h2 {
     text-align: center;
   }
 }
+.about-heading {
+  text-align: left;
+  font-size: 55px;
+}
+.about-intro {
+  text-align: left;
+  font-size: 28px;
+}
