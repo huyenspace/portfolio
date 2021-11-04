@@ -104,3 +104,18 @@ h2 {
 .work-skill {
   font-size: 20px;
 }
+.contact-heading {
+  text-align: start;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.contact-content {
+  font-family: var(--heading-font);
+  text-decoration: none;
+  color: var(--heading-color);
+  font-size: 20px;
+}
+.contact-content:hover {
+  color: #fcd704;
+  text-decoration: underline;
+}
