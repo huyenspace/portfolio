@@ -26,7 +26,13 @@ h2 {
   font-weight: bolder;
 }
 .hero {
-  background-image: url(pexels-photo-110854.jpeg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(pexels-photo-110854.jpeg);
+  background-size: cover;
 }
 .contactButton {
   text-align: center;
@@ -85,4 +91,16 @@ h2 {
 .about-intro {
   text-align: left;
   font-size: 28px;
+}
+.work-heading {
+  text-align: left;
+  font-size: 55px;
+  color: var(--heading-color);
+}
+.work-project {
+  font-size: 25px;
+  color: var(--heading-color);
+}
+.work-skill {
+  font-size: 20px;
 }
