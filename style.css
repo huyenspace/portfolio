@@ -25,6 +25,42 @@ h3 {
 h2 {
   font-weight: bolder;
 }
+nav {
+  padding: 16px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  padding-left: 15px;
+}
+nav a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: var(--name-font);
+  transition: all 100ms ease-in-out;
+}
+nav a:hover {
+  color: #fdfa2b;
+}
+nav li.active a {
+  color: var(--heading-color);
+}
+.title {
+  color: #f7f7f7;
+  font-size: 24px;
+  font-family: var(--name-font);
+}
+.logo {
+  max-width: 45px;
+  border: 1px solid #fdfa2b;
+  border-radius: 50px;
+}
 .hero {
   background-image: linear-gradient(
       to bottom,
@@ -33,6 +69,8 @@ h2 {
     ),
     url(pexels-photo-110854.jpeg);
   background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 100px;
 }
 .contactButton {
   text-align: center;
@@ -118,4 +156,9 @@ h2 {
 .contact-content:hover {
   color: #fcd704;
   text-decoration: underline;
+}
+.work-container,
+.about-container {
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
