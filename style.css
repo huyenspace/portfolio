@@ -5,6 +5,7 @@
   --backgound-color: #393e46;
   --secondary-color: #5c636e;
   --heading-color: #fdfa2b;
+  --mono-font: "Share Tech Mono", monospace;
 }
 body {
   background: var(--backgound-color);
@@ -18,15 +19,18 @@ h1 {
 h2,
 h3 {
   color: var(--text-color);
-  font-family: var(--heading-font);
+  font-family: var(--mono-font);
   text-align: center;
   font-size: 30px;
+}
+h3 .typing {
+  color: rgb(255, 107, 61);
 }
 h2 {
   font-weight: bolder;
 }
 nav {
-  padding: 16px;
+  padding: 10px;
 }
 nav ul {
   margin: 0;
@@ -45,8 +49,13 @@ nav a {
   font-family: var(--name-font);
   transition: all 100ms ease-in-out;
 }
+hr.styling {
+  height: 3px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #fdfa2b inset;
+}
 footer {
-  margin: 30px 0;
+  margin-top: 20px;
 }
 nav a:hover {
   color: #fdfa2b;
@@ -54,13 +63,17 @@ nav a:hover {
 nav li.active a {
   color: var(--heading-color);
 }
-footer .email-link {
-  text-decoration: none;
+.code-by-me {
   color: #f7f7f7;
-  font-family: var(--heading-font);
-  font-size: 22px;
+  padding-top: 10px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 14px;
 }
-footer .email-link:hover {
+.code-by-me span {
+  color: #fdfa2b;
+}
+.code-by-me a {
+  text-decoration: none;
   color: #fdfa2b;
 }
 footer .social-links a {
@@ -72,13 +85,17 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #f7f7f7;
 }
-hr {
-  border: 1px solid #fdfa2b;
+.navigation {
+  background: #393e46;
 }
 .title {
-  color: #f7f7f7;
-  font-size: 24px;
-  font-family: var(--name-font);
+  color: #fdfa2b;
+  font-size: 22px;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: bolder;
+  border: 1px solid #fdfa2b;
+  border-radius: 4px;
+  padding: 2px;
 }
 .logo {
   max-width: 45px;
@@ -92,19 +109,24 @@ hr {
       rgba(0, 0, 0, 0.6) 100%
     ),
     url(pexels-photo-110854.jpeg);
-  background-size: cover;
-  padding-top: 180px;
+  padding-top: 150px;
   padding-bottom: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100 vh;
+  width: 100%;
+  background-attachment: fixed;
+  margin: 0 auto;
 }
 .contactButton {
   text-align: center;
 }
 .contact-btn {
-  color: #393e46;
+  color: #fdfa2b;
   border: 1px solid #fdfa2b;
   border-radius: 15px;
   margin: 0 auto;
-  background: #fdfa2b;
   font-family: var(--heading-font);
   font-weight: bolder;
   font-size: larger;
@@ -112,7 +134,8 @@ hr {
   transition: all 200ms ease-in-out;
 }
 .contact-btn:hover {
-  background: #fcd704;
+  color: #393e46;
+  background-color: #fdfa2b;
 }
 .introduction {
   color: #f7f7f7;
@@ -122,9 +145,10 @@ hr {
 }
 .design-image {
   max-width: 100%;
-  border-radius: 5px;
-  padding: 5px;
-  background: #f8f7a3;
+  max-height: 400px;
+  border-radius: 50%;
+  box-shadow: rgb(255, 217, 19) 0px 0px 0px 5px,
+    rgb(255, 156, 85) 0px 0px 0px 7px, rgb(255, 85, 85) 0px 0px 0px 9px;
 }
 .project-name {
   color: var(--heading-color);
@@ -134,30 +158,52 @@ hr {
 }
 .project-content {
   color: var(--text-color);
-  font-family: var(--heading-font);
+  font-family: "Share Tech Mono", monospace;
   font-size: 18px;
   line-height: 1.7;
 }
-@media (max-width: 768px) {
-  .project-description {
-    text-align: center;
-  }
-  .project-name {
-    text-align: center;
-  }
+.project-content span {
+  color: #fcd704;
+  font-size: 16px;
+}
+.view-btn {
+  color: #f7f7f7;
+  font-family: "Share Tech Mono", monospace;
+  background-color: rgb(255, 85, 85);
+  transition: all 200ms ease-in-out;
+}
+.view-btn:hover {
+  background-color: rgb(255, 156, 85);
+  color: #f7f7f7;
 }
 .about-heading {
   text-align: left;
-  font-size: 55px;
+  font-size: 45px;
+}
+.about-heading span {
+  font-size: 25px;
+  font-family: "Share Tech Mono", monospace;
+  color: #f7f7f7;
+  background-color: rgb(255, 85, 85);
 }
 .about-intro {
   text-align: left;
-  font-size: 28px;
+  font-size: 20px;
+  font-family: "Share Tech Mono", monospace;
+}
+.about-intro span {
+  background-color: rgb(255, 156, 85);
+  color: #393e46;
 }
 .work-heading {
   text-align: left;
-  font-size: 55px;
-  color: var(--heading-color);
+  font-size: 35px;
+  color: #f7f7f7;
+  font-family: "Share Tech Mono", monospace;
+  margin-bottom: 50px;
+}
+.work-heading span {
+  background-color: rgb(255, 85, 85);
 }
 .work-project {
   font-size: 25px;
@@ -170,6 +216,9 @@ hr {
   text-align: start;
   margin-top: 20px;
   font-size: 25px;
+}
+.contact-heading span {
+  background-color: rgb(255, 156, 85);
 }
 .contact-content {
   font-family: var(--heading-font);
@@ -184,6 +233,195 @@ hr {
 }
 .work-container,
 .about-container {
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 100px;
+}
+.work .project-box {
+  background: var(--secondary-color);
+}
+.box-content {
+  text-align: left;
+  padding: 80px 20px;
+  background: #f7f7f7;
+  font-family: var(--heading-font);
+}
+.box-content h4 {
+  color: #393e46;
+  font-size: 30px;
+}
+.box-content p {
+  color: #5c636e;
+  font-size: 18px;
+}
+.homepage-app {
+  max-width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.project-btn {
+  margin-top: 20px;
+}
+.project-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: var(--heading-font);
+  color: rgb(0, 0, 116);
+  transition: all 200ms ease-in-out;
+}
+.project-btn a:hover {
+  color: #fcd704;
+}
+.skill-box {
+  background: #5c636e;
+  text-align: center;
+  border-radius: 10px;
+}
+.skill-box h4 {
+  color: #f7f7f7;
+  font-family: var(--name-font);
+  font-size: 30px;
+  text-align: center;
+}
+.skill-box i {
+  color: #fdfa2b;
+  font-size: 25px;
+}
+.skill-box .text {
+  color: #f7f7f7;
+  font-family: var(--heading-font);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+.certificate-image {
+  max-width: 100%;
+}
+.education-box h4 {
+  color: #f7f7f7;
+  font-family: var(--name-font);
+  font-size: 30px;
+  text-align: center;
+}
+.university {
+  color: #fdfa2b;
+  font-family: var(--heading-font);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+}
+.university a {
+  text-decoration: none;
+  color: #fdfa2b;
+  transition: all 100ms ease-in-out;
+}
+.university a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 156);
+}
+.certification-box {
+  font-family: var(--heading-font);
+  font-size: 22px;
+  text-align: center;
+  color: #f7f7f7;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.education-box {
+  background: #5c636e;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+.project-info h4 {
+  margin-top: 30px;
+  color: #f7f7f7;
+  font-family: var(--mono-font);
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.project-info h4 span {
+  background: rgb(255, 156, 85);
+}
+.project-info p {
+  color: #f7f7f7;
+  font-family: var(--heading-font);
+  font-size: 18px;
+  line-height: 1.5;
+}
+.project-info p span {
+  text-decoration: underline #fdfa2b;
+}
+.project-info h6 {
+  color: #fdfa2b;
+  font-family: var(--name-font);
+  font-size: 15px;
+}
+.project-info .link a {
+  text-decoration: none;
+  color: rgb(255, 156, 85);
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  transition: all 150ms ease-in-out;
+}
+.project-info .link a:hover {
+  color: rgb(255, 85, 85);
+  text-decoration: underline;
+}
+.appImages {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.project-container {
+  background: #5c636e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+/* carousel */
+.projects-slider {
+  max-width: 60%;
+}
+.img-slider img {
+  max-width: 60%;
+  display: block;
+  margin: 30px auto;
+  border-radius: 4px;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+    rgb(255, 97, 5) 10px -10px;
+}
+.carousel-caption {
+  color: #393e46;
+  font-family: var(--name-font);
+}
+.carousel-caption h5 span {
+  background-color: rgb(255, 97, 5);
+  color: #f7f7f7;
+  font-size: 18px;
+}
+/* project-section */
+.project-section {
+  text-align: center;
+}
+.project-section .decor i {
+  color: #fcd704;
+  font-size: 25px;
+  margin-top: 50px;
+  padding: 0 5px;
+}
+.project-section p {
+  color: #f7f7f7;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .project-description {
+    text-align: center;
+  }
+  .project-name {
+    text-align: center;
+  }
+  .university {
+    font-size: 15px;
+  }
 }
